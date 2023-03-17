@@ -1,6 +1,6 @@
 # WebCore Client SDK
 
-JavaScript/TypeScript SDK for People Power IoT Suite public API - <https://iotapps.docs.apiary.io>
+JavaScript/TypeScript SDK for Care Daily IoT Suite public API - <https://iotapps.docs.apiary.io>
 
 ## Installation
 
