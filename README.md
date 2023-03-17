@@ -4,19 +4,19 @@ JavaScript/TypeScript SDK for People Power IoT Suite public API - <https://iotap
 
 ## Installation
 
-People Power packages provided by GitHub package registry. To install such packages you need to be authorised. Read more about [Authenticating to GitHub Packages](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages).
+Care Daily packages provided by GitHub package registry. To install such packages you need to be authorised. Read more about [Authenticating to GitHub Packages](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-npm-registry#authenticating-to-github-packages).
 
 Modify global NPM config at *~/.npmrc* with *GITHUB_TOKEN* value and registry association.
 
 ``` bash
-@peoplepower:registry=https://npm.pkg.github.com
+@CareDailyAI:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=
 ```
 
 Then, install package using `npm` (you can use `yarn` as well)
 
 ``` bash
-npm install @peoplepower/webcore --save`
+npm install @CareDailyAI/webcore --save`
 ```
 
 ## Import
@@ -35,9 +35,9 @@ We could enable browser-friendly UMD build (for injecting right into the web pag
 ### Typescript Import
 
 ``` typescript
-import { WebCore } from '@peoplepower/webcore/dist/types/ppc-webcore';
-import type { Environment } from '@peoplepower/webcore/dist/types/modules/envir/environment';
-import type { WebCoreConfig } from '@peoplepower/webcore/dist/types/modules/tuner/config';
+import { WebCore } from '@CareDailyAI/webcore/dist/types/ppc-webcore';
+import type { Environment } from '@CareDailyAI/webcore/dist/types/modules/envir/environment';
+import type { WebCoreConfig } from '@CareDailyAI/webcore/dist/types/modules/tuner/config';
 
 const env: Environment = 'dev'; // or `'prod'`, or `process.env.NODE_ENV`
 const config: WebCoreConfig = {
@@ -54,7 +54,7 @@ export default webCoreInstance;
 ### Bundler (webpack) Import with JavaScript
 
 ``` javascript
-import { WebCore } from '@peoplepower/webcore';
+import { WebCore } from '@CareDailyAI/webcore';
 
 const env = 'prod';
 const config = {
@@ -155,10 +155,10 @@ The problem is React Native has no `localStorage` and `btoa`.
 This realization is just example. You should adapt it for your environment. The same code is located [here](src/ppc-webcore-rn.ts).
 
 ``` typescript
-import { WebCore } from '@peoplepower/webcore';
-import { LocalStorageProvider } from '@peoplepower/webcore/dist/types/modules/localStorage/localStorage';
-import { Environment } from '@peoplepower/webcore/dist/types/modules/envir/environment';
-import { WebCoreConfig } from '@peoplepower/webcore/dist/types/modules/tuner/config';
+import { WebCore } from '@CareDailyAI/webcore';
+import { LocalStorageProvider } from '@CareDailyAI/webcore/dist/types/modules/localStorage/localStorage';
+import { Environment } from '@CareDailyAI/webcore/dist/types/modules/envir/environment';
+import { WebCoreConfig } from '@CareDailyAI/webcore/dist/types/modules/tuner/config';
 import { AsyncStorage } from 'react-native';
 import { decode, encode } from 'js-base64';
 
@@ -251,4 +251,4 @@ const wsPromise = ls.load()
 
 For more usage options or examples you could refer to the source code. Almost every method is covered by comments.
 
-If you need some additional feature, something is not working properly, or you don't understand something - feel free to look into [GitHub Issues](https://github.com/peoplepower/webcore/issues).
+If you need some additional feature, something is not working properly, or you don't understand something - feel free to look into [GitHub Issues](https://github.com/CareDailyAI/webcore/issues).
