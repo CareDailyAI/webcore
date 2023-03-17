@@ -1,10 +1,10 @@
 {
-  "name": "@peoplepower/webcore",
-  "version": "1.4.1",
-  "description": "Client JS/TS SDK for People Power App API",
+  "name": "@CareDailyAI/webcore",
+  "version": "1.4.2",
+  "description": "Client JS/TS SDK for Care Daily App API",
   "keywords": [
     "WebCore",
-    "People Power",
+    "Care Daily",
     "Client SDK",
     "App API"
   ],
@@ -16,13 +16,13 @@
     "README.md",
     "LICENSE"
   ],
-  "author": "Aleksei Tolkachev <aleksei@peoplepowerco.com>",
+  "author": "Aleksei Tolkachev <aleksei@caredaily.ai>",
   "contributors": [
-    "Max Filatov <max@peoplepowerco.com>"
+    "Max Filatov <max@caredaily.ai>"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/peoplepower/webcore.git"
+    "url": "https://github.com/CareDailyAI/webcore.git"
   },
   "license": "Apache-2.0",
   "engines": {
